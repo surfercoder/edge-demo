@@ -9,6 +9,10 @@ A modern dashboard application built with Vue.js and Node.js that visualizes fin
 - Responsive design for all device sizes
 - RESTful API backend with mock data
 
+## Live Demo
+
+Check out the live demo: [Edge Demo](https://edge-demo-teal.vercel.app/)
+
 ## Tech Stack
 
 ### Frontend

@@ -6,9 +6,9 @@
         <h2>Market Overview</h2>
         <Line
           v-if="chartData"
+          ref="chartRef"
           :data="chartData"
           :options="chartOptions"
-          ref="chartRef"
         />
       </div>
     </div>
@@ -97,9 +97,8 @@ onMounted(() => {
 
 onUnmounted(() => {
   // Clean up chart instance
-  const chart = chartRef.value?.chart
-  if (chart) {
-    chart.destroy()
+  if (chartRef.value?.chart) {
+    chartRef.value.chart.destroy()
   }
 })
 </script>
